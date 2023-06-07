@@ -83,7 +83,7 @@ export default function App() {
   
   return (
     <View style={styles.container}>
-      <Header titre = {translate.t("headText")} couleurFond = "blue"/>
+      <Header titre = {translate.t("headText")} couleurFond = "black"/>
 
       <View style={styles.select}>
         <Text style={styles.font}>Id:</Text>
@@ -124,12 +124,12 @@ const styles = StyleSheet.create({
     flex: 1,
     justifyContent: 'flex-start',
     paddingTop: Constants.statusBarHeight,
-    backgroundColor: '#ecf0f1',
+    backgroundColor: '#878889',
     padding: 8,
   },
   select:{
     justifyContent:'space-around',
-    backgroundColor:'lightgreen',
+    backgroundColor:'#A3A9A9',
     height:210,
     padding: 20,
     fontSize: 18
@@ -144,7 +144,7 @@ const styles = StyleSheet.create({
   press: {
     padding:8,
     borderRadius:3,
-    backgroundColor:'dodgerblue',
+    backgroundColor:'black',
   },
   pressText:{
     color:'white',
@@ -154,6 +154,7 @@ const styles = StyleSheet.create({
     marginTop:20
   },
   font:{
+    color:'white',
     fontWeight: 'bold'
   },
 });
