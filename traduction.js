@@ -10,7 +10,9 @@ fr:{
   register:"ENREGISTRER",
   display:"AFFICHER",
   submit:"Soumis",
-  studentClass: "prend les cours: "
+  studentClass: "prend les cours: ",
+  lang: "FR"
+  
 },
 en:{
   headText: "CLASS REGISTRATION",
@@ -23,6 +25,7 @@ en:{
   register:"REGISTER",
   display:"DISPLAY",
   submit:"Submit",
-  studentClass: "take the classes: "
+  studentClass: "take the classes: ",
+  lang: "EN"
   }
 }
