@@ -25,6 +25,8 @@ export default function App() {
   const [info, setInfo] = useState(translate.t("noStudent"));
   const [msg, setMsg] = useState(translate.t("confirmStudent"));
   const [darkmode, setDarkmode] = useState(true);
+  const [darkText, setDarkText] = useState("Dark");
+
 
   //Couleurs
   let colorBlackBlue= darkmode?"black":"cornflowerblue";
@@ -116,9 +118,11 @@ export default function App() {
   }
       const modifierStyle = ()=>{
     if(darkmode){
-      setDarkmode(false) 
+      setDarkmode(false);
+      setDarkText("Clear");
     }else{
-      setDarkmode(true) 
+      setDarkmode(true);
+      setDarkText("Dark");
     }
   }
 
@@ -135,7 +139,7 @@ export default function App() {
        <TouchableOpacity
         activeOpacity={0.2}
         onPress={modifierStyle}>
-        <Text style = {[styles.toText, styles.button3,{backgroundColor:colorBlackBlue}]}>Dark</Text>
+        <Text style = {[styles.toText, styles.button3,{backgroundColor:colorBlackBlue}]}>{darkText}</Text>
       </TouchableOpacity> 
       <Text style={styles.font}>Id:</Text>
         <TextInput style={{borderWidth:1}} keyboardType="number-pad" onChangeText={idToName} value={texte} />
